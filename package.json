@@ -2,6 +2,7 @@
   "name": "morning-dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://hengziying.github.io/Projects/React/morning-dashboard/",
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "buffer": "^6.0.3",
@@ -25,7 +26,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
