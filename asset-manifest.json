@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React-Morning-Dashboard/static/css/main.b38e0fb3.css",
+    "main.js": "/React-Morning-Dashboard/static/js/main.4e7889ee.js",
+    "index.html": "/React-Morning-Dashboard/index.html",
+    "main.b38e0fb3.css.map": "/React-Morning-Dashboard/static/css/main.b38e0fb3.css.map",
+    "main.4e7889ee.js.map": "/React-Morning-Dashboard/static/js/main.4e7889ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b38e0fb3.css",
+    "static/js/main.4e7889ee.js"
+  ]
+}
