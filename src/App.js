@@ -4,7 +4,6 @@ import LayoutForm from "./component/LayoutForm";
 import UrlForm from "./component/UrlForm";
 import FeedList from "./component/FeedList";
 
-
 export default function App() {
   const savedUrls = JSON.parse(localStorage.getItem("urls")) || [
     {
@@ -80,9 +79,7 @@ export default function App() {
               cors-anywhere.herokuapp.com/corsdemo
             </a>
           </p>
-          <button className="dismiss-button" onClick={() => setShowProxyAlert(false)}>
-            Dismiss
-          </button>
+          <button onClick={() => setShowProxyAlert(false)}>Dismiss</button>
         </div>
       )}
       <Dashboard />
