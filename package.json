@@ -1,15 +1,8 @@
 {
-<<<<<<< HEAD
   "name": "morning-dashboard",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://hengziying.github.io/React-Morning-Dashboard",
-=======
-  "homepage": "https://hengziying.github.io/React-Morning-Dashboard",
-  "name": "morning-dashboard",
-  "version": "0.1.0",
-  "private": true,
->>>>>>> 1b93431863de171017c865dd28244374325e5716
   "dependencies": {
     "@craco/craco": "^7.1.0",
     "buffer": "^6.0.3",
@@ -31,19 +24,11 @@
   },
   "scripts": {
     "start": "craco start",
-<<<<<<< HEAD
     "build": "craco build",
     "test": "craco test",
     "eject": "craco eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-=======
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject"
->>>>>>> 1b93431863de171017c865dd28244374325e5716
   },
   "eslintConfig": {
     "extends": [
