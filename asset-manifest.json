@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/React-Morning-Dashboard/static/css/main.b38e0fb3.css",
-    "main.js": "/React-Morning-Dashboard/static/js/main.4e7889ee.js",
+    "main.css": "/React-Morning-Dashboard/static/css/main.bb124c45.css",
+    "main.js": "/React-Morning-Dashboard/static/js/main.206d2953.js",
     "index.html": "/React-Morning-Dashboard/index.html",
-    "main.b38e0fb3.css.map": "/React-Morning-Dashboard/static/css/main.b38e0fb3.css.map",
-    "main.4e7889ee.js.map": "/React-Morning-Dashboard/static/js/main.4e7889ee.js.map"
+    "main.bb124c45.css.map": "/React-Morning-Dashboard/static/css/main.bb124c45.css.map",
+    "main.206d2953.js.map": "/React-Morning-Dashboard/static/js/main.206d2953.js.map"
   },
   "entrypoints": [
-    "static/css/main.b38e0fb3.css",
-    "static/js/main.4e7889ee.js"
+    "static/css/main.bb124c45.css",
+    "static/js/main.206d2953.js"
   ]
 }
