@@ -1,8 +1,5 @@
 # Morning Dashboard
 
-A dashboard that allows users to personalize their RSS news feed experience. Users can easily add, manage, and view their favourite news sources, providing a tailored and streamlined way to stay updated on the latest topics that matter to them. 
-
-
 Demo:[Morning Dashboard Demo](https://hengziying.github.io/React-Morning-Dashboard/)
 
 A dashboard that allows users to personalize their RSS news feed experience. Users can easily add, manage, and view their favourite news sources, providing a tailored and streamlined way to stay updated on the latest topics that matter to them.
