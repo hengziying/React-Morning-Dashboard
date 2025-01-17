@@ -1,11 +1,10 @@
+import React, { useEffect, useState } from "react";
 import Dashboard from "./component/Dashboard";
 import LayoutForm from "./component/LayoutForm";
 import UrlForm from "./component/UrlForm";
-import React, { useEffect, useState } from "react";
 import FeedList from "./component/FeedList";
 
 export default function App() {
-  //retrieve urls, columns, and rows from local storage
   const savedUrls = JSON.parse(localStorage.getItem("urls")) || [
     {
       urlLink: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml",
@@ -23,8 +22,8 @@ export default function App() {
   const [Urls, setUrls] = useState(savedUrls);
   const [columns, setColumns] = useState(savedColumns);
   const [rows, setRows] = useState(savedRows);
+  const [showProxyAlert, setShowProxyAlert] = useState(false);
 
-  //save columns, row, and urls to local storage when they change
   useEffect(() => {
     localStorage.setItem("columns", JSON.stringify(columns));
     localStorage.setItem("rows", JSON.stringify(rows));
@@ -33,6 +32,14 @@ export default function App() {
   useEffect(() => {
     localStorage.setItem("urls", JSON.stringify(Urls));
   }, [Urls]);
+
+  useEffect(() => {
+    const hasShownAlert = sessionStorage.getItem("proxyAlertShown");
+    if (!hasShownAlert) {
+      setShowProxyAlert(true);
+      sessionStorage.setItem("proxyAlertShown", "true");
+    }
+  }, []);
 
   function handleAddUrl(newUrl) {
     setUrls((prevUrl) => [...prevUrl, newUrl]);
@@ -60,6 +67,26 @@ export default function App() {
 
   return (
     <div className="dashboard">
+      {showProxyAlert && (
+        <div className="proxy-alert">
+          <p>
+            Please request CORS proxy access from:{" "}
+            <a
+              href="https://cors-anywhere.herokuapp.com/corsdemo"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              cors-anywhere.herokuapp.com/corsdemo
+            </a>
+          </p>
+          <button
+            className="dismiss-button"
+            onClick={() => setShowProxyAlert(false)}
+          >
+            Dismiss
+          </button>
+        </div>
+      )}
       <Dashboard />
       <UrlForm urls={Urls} onAddUrl={handleAddUrl} />
       <LayoutForm
