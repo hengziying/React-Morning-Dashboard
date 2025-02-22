@@ -9,7 +9,7 @@ export default function FeedList({ url, onDlt, onChangeCount }) {
   const [items, setItems] = useState([]);
   const [isOpen, setIsOpen] = useState(true);
 
-  const corsProxy = "https://cors-anywhere.herokuapp.com/";
+  const corsProxy = "https://morning-dashboard-backend.onrender.com/proxy?url=";
 
   function handleOpen() {
     setIsOpen((isOpen) => !isOpen);
@@ -33,7 +33,7 @@ export default function FeedList({ url, onDlt, onChangeCount }) {
       console.log(response);
       const feedData = await response.text();
       const feeds = await parser.parseString(feedData);
-      setFeeds(feeds); // Set the title of the feed
+      setFeeds(feeds);
 
       setItems(feeds.items.slice(0, url.count));
     } catch (error) {
